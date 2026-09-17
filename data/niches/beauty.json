@@ -1,0 +1,36 @@
+{
+  "niche": "beauty",
+  "keywords": ["beauty", "skincare", "makeup", "cosmetics", "glow", "glow up", "hair", "haircare", "lipstick", "tutorial", "routine", "aesthetic", "dermatology", "antiaging"],
+  "highCompetition": [
+    "#beauty", "#makeup", "#skincare", "#makeuptutorial", "#glam", "#instabeauty", "#cosmetics", "#lipstick", "#beautytips", "#skin"
+  ],
+  "mediumCompetition": [
+    "#skincareroutine", "#makeuplover", "#glowingskin", "#cleanbeauty", "#drugstoregem", "#skincarecommunity", "#everydaymakeup", "#naturalglam", "#hairtransformation", "#kbeauty"
+  ],
+  "lowCompetition": [
+    "#glassskinroutine2026", "#affordablemakeuphacks", "#hyperpigmentationtips", "#barrierrepairskincare", "#underpaintingtechnique", "#beginnerfriendlyglam", "#cleangirlmakeupstepbystep"
+  ],
+  "youtubeTags": [
+    "skincare routine for clear skin", "easy everyday makeup tutorial", "drugstore makeup dupes",
+    "glow up transformation", "anti aging skincare guide", "honest product review",
+    "k-beauty secrets explained", "how to fix dry hair", "flawless base makeup"
+  ],
+  "tiktokTags": [
+    "#BeautyTok", "#SkincareTok", "#MakeupHacks", "#GlowUpCheck", "#GlassSkin", "#GRWMBursty", "#LipCombo", "#DermTok"
+  ],
+  "facebookTags": [
+    "#BeautyTips", "#HealthySkin", "#MakeupObsessed", "#DailyGlow", "#SelfCareRoutine"
+  ],
+  "titleTemplates": [
+    "The Secret to Glass Skin with {topic} (Dermatologist Approved)",
+    "I Tested Viral {topic} Products So You Don't Have To",
+    "Transform Your Routine: 5 {topic} Mistakes Ruining Your Glow",
+    "Affordable {topic} Dupes That Work Better Than Luxury Brands",
+    "My 5-Minute Everyday {topic} Routine (Flawless Finish)"
+  ],
+  "bioSnippets": [
+    "✨ Glow from within | Realistic {topic} tips & product reviews\n🌿 Clean beauty & barrier care\n👇 Shop my holy grail products & shade matches",
+    "💄 Certified MUA breaking down {topic} step by step\n💖 Confidence & glow-ups for everyone\n👇 Bookings & masterclass link below",
+    "🌸 Honest, no-filter reviews on {topic}\n🧖‍♀️ Helping you find what actually works for your skin"
+  ]
+}

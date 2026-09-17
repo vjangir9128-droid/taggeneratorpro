@@ -1,0 +1,38 @@
+{
+  "niche": "fitness",
+  "keywords": ["fitness", "gym", "workout", "bodybuilding", "exercise", "weight loss", "weightloss", "muscle", "cardio", "training", "diet", "crossfit", "abs", "physique", "fat loss"],
+  "highCompetition": [
+    "#fitness", "#gym", "#workout", "#fit", "#motivation", "#bodybuilding", "#fitnessmotivation", "#training", "#lifestyle", "#health"
+  ],
+  "mediumCompetition": [
+    "#gymlife", "#fitfam", "#muscle", "#gains", "#fitnessjourney", "#personaltrainer", "#homeworkout", "#workoutroutine", "#fitgoals", "#strengthtraining", "#weightlossjourney", "#gymmotivation"
+  ],
+  "lowCompetition": [
+    "#naturalbodybuilding", "#fatlosstips", "#chestdayworkout", "#coreworkoutroutine", "#pushdaymotivation", "#beginnerfitnessjourney", "#dailygymgrind", "#calisthenicsworkout", "#cleanbulking", "#legdayeveryday"
+  ],
+  "youtubeTags": [
+    "fitness motivation", "gym workout", "how to build muscle", "full body workout",
+    "fat loss tips", "home workout no equipment", "bodybuilding motivation",
+    "fitness routine 2026", "gym routine for beginners", "workout motivation",
+    "chest workout at gym", "leg day workout routine", "diet plan for weight loss",
+    "hypertrophy training", "progressive overload explained"
+  ],
+  "tiktokTags": [
+    "#GymTok", "#FitnessTok", "#WorkoutChallenge", "#GymMotivation", "#FitCheck", "#Gainz", "#WorkoutHack", "#HealthTok"
+  ],
+  "facebookTags": [
+    "#FitnessTips", "#HealthyLiving", "#WorkoutRoutine", "#GymLife", "#FitnessGoals"
+  ],
+  "titleTemplates": [
+    "How to {topic} (Step-by-Step 2026 Guide)",
+    "The Ultimate {topic} Routine (Fast Results)",
+    "5 Biggest {topic} Mistakes You Must Avoid",
+    "Transform Your Body with {topic} in 30 Days",
+    "The Only {topic} Video You Ever Need to Watch"
+  ],
+  "bioSnippets": [
+    "💪 Mastering {topic} daily | Science-backed routines\n👇 Transform your physique with our free guide",
+    "⚡ Daily {topic} inspiration & discipline\n🔥 Level up your health & fitness\n📩 Work with me below 👇",
+    "🎯 Simple workouts & {topic} tips for busy people\n🌟 New routines every week"
+  ]
+}

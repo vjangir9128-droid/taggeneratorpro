@@ -1,0 +1,37 @@
+{
+  "niche": "tech",
+  "keywords": ["tech", "technology", "ai", "artificial intelligence", "coding", "programming", "software", "gadget", "smartphone", "iphone", "android", "computer", "developer", "webdev", "cybersecurity"],
+  "highCompetition": [
+    "#tech", "#technology", "#innovation", "#gadgets", "#engineering", "#programming", "#coding", "#artificialintelligence", "#future", "#science"
+  ],
+  "mediumCompetition": [
+    "#techtrends", "#developerlife", "#webdevelopment", "#softwareengineer", "#technews", "#gadgetlover", "#coders", "#aitools", "#techtips", "#automation"
+  ],
+  "lowCompetition": [
+    "#aitoolsthatsavehours", "#learncodingfromscratch", "#productivitytechhacks", "#frontendtipsandtricks", "#nextjsdeveloper", "#smartphonereview2026", "#cleancodetips", "#cybersecuritytips"
+  ],
+  "youtubeTags": [
+    "tech review 2026", "best ai tools", "coding tutorial", "unboxing and review",
+    "is it worth buying", "software engineering tips", "tech news today",
+    "top tech gadgets", "ai automation tutorial", "how to learn programming",
+    "smartphone comparison", "desk setup guide", "future technology"
+  ],
+  "tiktokTags": [
+    "#TechTok", "#CoolTech", "#AITools", "#LearnOnTikTok", "#TechHacks", "#GadgetTok", "#ProgrammerHumor", "#TechLife"
+  ],
+  "facebookTags": [
+    "#TechCommunity", "#InnovationToday", "#DigitalTrends", "#FutureTech", "#GadgetLovers"
+  ],
+  "titleTemplates": [
+    "{topic} is Changing EVERYTHING (Full Breakdown)",
+    "Why Everyone is Talking About {topic} in 2026",
+    "Stop Doing This with {topic} (Use This Instead)",
+    "The Truth About {topic}: What Nobody Told You",
+    "I Tested {topic} for 14 Days (Is It Worth The Hype?)"
+  ],
+  "bioSnippets": [
+    "⚡ Simplifying {topic} & modern tools for creators\n🤖 AI experiments, tutorials & workflows\n👇 Get our weekly Tech Stack newsletter",
+    "💻 Building the future of {topic}\n🚀 Tutorials, reviews & developer breakdowns\n🔗 Useful links & presets 👇",
+    "📱 Unfiltered reviews on {topic} & gadgets\n💡 Helping you master tech without the fluff"
+  ]
+}

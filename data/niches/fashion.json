@@ -1,0 +1,36 @@
+{
+  "niche": "fashion",
+  "keywords": ["fashion", "outfit", "ootd", "style", "streetwear", "thrift", "haul", "wardrobe", "aesthetic", "clothing", "lookbook", "vintage", "sneakers", "trends"],
+  "highCompetition": [
+    "#fashion", "#style", "#ootd", "#fashionblogger", "#streetstyle", "#instafashion", "#lookbook", "#outfitoftheday", "#stylish", "#fashionista"
+  ],
+  "mediumCompetition": [
+    "#outfitinspo", "#styletips", "#capsulewardrobe", "#streetwearfashion", "#thrifthaul", "#minimalistfashion", "#fashiontrends", "#dailyoutfit", "#aestheticstyle", "#sneakerhead"
+  ],
+  "lowCompetition": [
+    "#budgetoutfitinspo", "#thriftlookbook2026", "#howtostylebasics", "#capsulewardrobetips", "#monochromaticoutfits", "#timelesswardrobepieces", "#streetwearfitcheck", "#cleangirlstyle"
+  ],
+  "youtubeTags": [
+    "outfit ideas 2026", "thrift flip haul", "how to style basics", "capsule wardrobe guide",
+    "streetwear lookbook", "fashion trends to try", "look expensive on a budget",
+    "sneaker collection", "closet declutter and organize", "aesthetic outfit inspiration"
+  ],
+  "tiktokTags": [
+    "#FitCheck", "#FashionTok", "#OOTDTok", "#StyleHacks", "#ThriftHaul", "#StreetwearTok", "#GetReadyWithMe", "#FashionInspo"
+  ],
+  "facebookTags": [
+    "#StyleInspiration", "#FashionDaily", "#WardrobeEssentials", "#LookbookLove", "#FashionCommunity"
+  ],
+  "titleTemplates": [
+    "10 Easy Ways to Style {topic} (Look Rich on a Budget)",
+    "Huge {topic} Haul & Try-On (Honest Reviews)",
+    "Stop Dressing Like This: {topic} Style Mistakes in 2026",
+    "Building the Perfect {topic} Capsule Wardrobe",
+    "I Tested 5 Viral {topic} Trends (Which Ones Actually Look Good?)"
+  ],
+  "bioSnippets": [
+    "✨ Elevating your style through {topic}\n👗 Wearable outfits, budget styling & timeless pieces\n👇 Shop my exact looks & discount codes",
+    "👟 Curated {topic} & modern streetwear\n🖤 Minimalist aesthetics | Daily fit inspo\n👇 Outfit links & links in bio",
+    "👠 Practical {topic} styling guides for everyday confidence\n📦 Unboxings, hauls & capsule advice"
+  ]
+}

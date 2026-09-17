@@ -1,0 +1,36 @@
+{
+  "niche": "education",
+  "keywords": ["education", "study", "productivity", "student", "learn", "college", "university", "book", "career", "interview", "notes", "focus", "exam", "habits"],
+  "highCompetition": [
+    "#education", "#learning", "#study", "#motivation", "#student", "#knowledge", "#inspiration", "#success", "#mindset", "#books"
+  ],
+  "mediumCompetition": [
+    "#studymotivation", "#productivityhacks", "#studygram", "#collegelife", "#studentlife", "#studytips", "#careergoals", "#examtips", "#deepwork", "#timeManagement"
+  ],
+  "lowCompetition": [
+    "#activerecallstudyroutine", "#pomodorotechniquehacks", "#notetakingaesthetic", "#studysmarternotharder", "#aceyourexams2026", "#resumebuildinghacks", "#morningproductivityroutine"
+  ],
+  "youtubeTags": [
+    "how to study smarter not harder", "productivity routine for students", "deep work study with me",
+    "how to pass any exam", "time management techniques", "best note taking apps 2026",
+    "career advice for graduates", "how to read 10x faster"
+  ],
+  "tiktokTags": [
+    "#StudyTok", "#ProductivityTok", "#SchoolHacks", "#CollegeTok", "#StudyMotivation", "#LifeHacks", "#CareerTok", "#LearnOnTikTok"
+  ],
+  "facebookTags": [
+    "#ContinuousLearning", "#StudentCommunity", "#CareerGrowth", "#LifeSkills", "#KnowledgeIsPower"
+  ],
+  "titleTemplates": [
+    "How to Master {topic} in 30 Days (Science-Backed Method)",
+    "The Ultimate Guide to {topic} for Students & Creators",
+    "Stop Wasting Time: 5 {topic} Hacks That Changed My Life",
+    "Why 99% of People Fail at {topic} (And How to Fix It)",
+    "How I Used {topic} to 10x My Daily Focus"
+  ],
+  "bioSnippets": [
+    "📚 Transforming how you approach {topic} & lifelong learning\n🧠 Actionable productivity frameworks & study systems\n👇 Download my free Notion templates below",
+    "🎓 Helping students & young pros excel in {topic}\n⚡ Smarter habits, better grades & high-paying careers\n👇 Free student resource hub below",
+    "📖 Daily summaries & insights on {topic}\n💡 Reading 50+ books a year so you get the best gems"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "niche": "lifestyle",
+  "keywords": ["lifestyle", "daily vlog", "routine", "morning routine", "day in my life", "mindfulness", "habits", "aesthetic", "cozy", "minimalism", "organization", "journaling"],
+  "highCompetition": [
+    "#lifestyle", "#life", "#motivation", "#happiness", "#goodvibes", "#inspiration", "#positivevibes", "#mindset", "#daily", "#selfcare"
+  ],
+  "mediumCompetition": [
+    "#lifestyleblogger", "#dayinmylife", "#morningroutine", "#cozyvibes", "#aestheticlifestyle", "#mindfulliving", "#wellnessjourney", "#dailyroutine", "#selflove", "#simpleliving"
+  ],
+  "lowCompetition": [
+    "#productivemorningroutine2026", "#aestheticdayinmylife", "#realisticwellnessroutine", "#sundayresetroutine", "#slowlivingaesthetic", "#habittrackingtips", "#cozyvlogvibes"
+  ],
+  "youtubeTags": [
+    "day in my life vlog", "realistic morning routine", "sunday reset routine",
+    "habits that changed my life", "aesthetic daily vlog", "how to organize your life",
+    "productive day in the life", "minimalist apartment tour", "mindset shift"
+  ],
+  "tiktokTags": [
+    "#LifestyleTok", "#DayInMyLife", "#SundayReset", "#MorningRoutine", "#AestheticVlog", "#SelfCareCheck", "#CleanAesthetic", "#VlogLife"
+  ],
+  "facebookTags": [
+    "#LifestyleInspo", "#DailyInspiration", "#WellnessClub", "#HealthyHabits", "#MindfulLiving"
+  ],
+  "titleTemplates": [
+    "A Realistic Day in My Life with {topic} (Reset & Recharge)",
+    "5 Daily Habits Around {topic} That Truly Transformed My Life",
+    "My Ultimate {topic} Routine for Peak Energy and Peace",
+    "The Calmest {topic} Vlog You'll Watch Today",
+    "How Simplifying {topic} Changed Everything for Me"
+  ],
+  "bioSnippets": [
+    "🌿 Romanticizing the everyday & exploring {topic}\n✨ Slow living, cozy routines & mindful habits\n👇 Shop my aesthetic favorites & journal prompts",
+    "☕ Daily {topic} moments & realistic lifestyle vlogs\n🤍 Finding peace in the ordinary\n👇 Links, presets & collaborations below",
+    "🌸 Inspiring intentional living through {topic}\n🏡 Home resets, wellness & positive routines"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "niche": "business",
+  "keywords": ["business", "entrepreneur", "marketing", "finance", "money", "investing", "startup", "ecommerce", "passive income", "sales", "wealth", "side hustle", "real estate", "crypto"],
+  "highCompetition": [
+    "#business", "#entrepreneur", "#success", "#marketing", "#money", "#motivation", "#finance", "#mindset", "#investing", "#wealth"
+  ],
+  "mediumCompetition": [
+    "#entrepreneurship", "#smallbusiness", "#digitalmarketing", "#sidehustle", "#passiveincome", "#financialfreedom", "#startupgrowth", "#businessowner", "#salesstrategy", "#workfromhome"
+  ],
+  "lowCompetition": [
+    "#sidehustleideas2026", "#ecommercegrowthhacks", "#passiveincomeblueprint", "#beginnerinvestingtips", "#zerodollarstartup", "#solopreneurtips", "#contentmarketingscaling", "#organicclientacquisition"
+  ],
+  "youtubeTags": [
+    "how to make money online 2026", "side hustle ideas for beginners", "passive income blueprint",
+    "digital marketing strategy", "investing for beginners", "small business scaling",
+    "ecommerce tutorial step by step", "sales funnel optimization", "entrepreneur day in the life"
+  ],
+  "tiktokTags": [
+    "#MoneyTok", "#BusinessTok", "#SideHustleTok", "#EntrepreneurLife", "#PassiveIncome", "#LearnToInvest", "#CareerTok", "#RichTok"
+  ],
+  "facebookTags": [
+    "#BusinessOwners", "#EntrepreneurMindset", "#FinancialLiteracy", "#MarketingTips", "#GrowthStrategies"
+  ],
+  "titleTemplates": [
+    "How to Build a $10,000/Mo Business Around {topic}",
+    "The 5-Step Blueprint to Master {topic} in 2026",
+    "Don't Start {topic} Until You Watch This Video",
+    "How I Scaled {topic} with $0 in Ad Spend",
+    "3 Little-Known Secrets to Monetizing {topic} Fast"
+  ],
+  "bioSnippets": [
+    "💼 Scaling {topic} ventures from 0 to 6 figures\n📈 Actionable growth, sales & monetization strategies\n👇 Download our free 2026 growth roadmap",
+    "🚀 Helping founders & solopreneurs master {topic}\n💡 No-BS business frameworks & weekly breakdowns\n👇 Join 25k+ subscribers below",
+    "💰 Practical {topic} insights for aspiring entrepreneurs\n⚡ Daily wealth habits & smart investing advice"
+  ]
+}

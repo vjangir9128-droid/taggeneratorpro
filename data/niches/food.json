@@ -1,0 +1,36 @@
+{
+  "niche": "food",
+  "keywords": ["food", "recipe", "cooking", "baking", "street food", "restaurant", "chef", "delicious", "dinner", "healthy food", "snack", "dessert", "foodie", "meal prep"],
+  "highCompetition": [
+    "#food", "#foodie", "#foodporn", "#instafood", "#yummy", "#delicious", "#dinner", "#homemade", "#chef", "#cooking"
+  ],
+  "mediumCompetition": [
+    "#foodlover", "#foodphotography", "#healthyrecipes", "#easyrecipes", "#quickmeals", "#bakinglove", "#comfortfood", "#mealprepideas", "#streetfoodlover", "#cookingtips"
+  ],
+  "lowCompetition": [
+    "#15minutedinnerideas", "#budgetmealpreptips", "#crispyhomemadefood", "#simpledinnerrecipes", "#secretseasoninghacks", "#healthyrecipeinspo", "#quickdessertrecipes", "#scratchcookingdaily"
+  ],
+  "youtubeTags": [
+    "easy recipe at home", "quick 15 minute dinner", "street food tour", "how to cook",
+    "secret recipe revealed", "meal prep for the week", "cooking tutorial step by step",
+    "restaurant style food", "homemade comfort food", "crispy recipe hack"
+  ],
+  "tiktokTags": [
+    "#FoodTok", "#RecipeTok", "#EasyRecipe", "#QuickDinner", "#CookWithMe", "#FoodieTok", "#MealPrep", "#TastyBites"
+  ],
+  "facebookTags": [
+    "#CookingAtHome", "#FamilyRecipes", "#DeliciousEats", "#DinnerIdeas", "#FoodLoversClub"
+  ],
+  "titleTemplates": [
+    "Never Order Takeout Again: 15-Minute {topic} Recipe",
+    "How to Make Restaurant-Quality {topic} at Home",
+    "The Secret Ingredient that Makes {topic} 10x Better",
+    "I Made {topic} using Gordon Ramsay's Method",
+    "Crispy, Juicy & Easy: The Ultimate {topic} Masterclass"
+  ],
+  "bioSnippets": [
+    "🍳 Easy, mouthwatering {topic} recipes for everyday cooks\n🥗 Healthy twists & quick comfort meals\n👇 Get the written recipes here",
+    "🔪 Professional chef sharing secrets on {topic}\n✨ Minimal ingredients, maximum flavor\n👇 Download our 2026 recipe guide",
+    "🍰 Satisfying your cravings with {topic}\n📍 Exploring flavors, street eats & kitchen hacks"
+  ]
+}

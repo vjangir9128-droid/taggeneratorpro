@@ -1,0 +1,36 @@
+{
+  "niche": "travel",
+  "keywords": ["travel", "vlog", "trip", "vacation", "destination", "explore", "backpacking", "hotel", "resort", "flight", "bali", "europe", "wanderlust", "adventure", "tourism"],
+  "highCompetition": [
+    "#travel", "#wanderlust", "#nature", "#travelgram", "#photography", "#explore", "#travelphotography", "#adventure", "#trip", "#vacation"
+  ],
+  "mediumCompetition": [
+    "#travelblogger", "#traveling", "#traveltheworld", "#traveladdict", "#globetrotter", "#beautifuldestinations", "#traveldiaries", "#passionpassport", "#worldtraveler", "#instatraveling"
+  ],
+  "lowCompetition": [
+    "#budgettravelguide", "#solotraveladventures", "#hiddengeadestinations", "#travelvloggerslife", "#backpackersworld", "#secretspotsdiscovered", "#tropicalislandescape", "#hiddengemsguide"
+  ],
+  "youtubeTags": [
+    "travel vlog", "travel tips 2026", "best places to visit", "budget travel guide",
+    "solo travel documentary", "hidden gems travel", "things to do in", "travel itinerary",
+    "top 10 destinations", "packing tips for travel", "cheap flights hack", "travel guide 4k"
+  ],
+  "tiktokTags": [
+    "#TravelTok", "#TravelHacks", "#BucketListPlaces", "#TravelCheck", "#SoloTravel", "#WanderlustTok", "#VacationVibes", "#HiddenGems"
+  ],
+  "facebookTags": [
+    "#TravelInspiration", "#VacationGoals", "#TravelCommunity", "#ExploreTheWorld", "#WanderlustDiaries"
+  ],
+  "titleTemplates": [
+    "I Spent 7 Days Exploring {topic} (Honest Review)",
+    "The Ultimate {topic} Travel Guide (2026 Secrets)",
+    "Don't Visit {topic} Before Watching This!",
+    "Top 10 Hidden Gems in {topic} You Won't Find on Google",
+    "How to Travel {topic} on a $30/Day Budget"
+  ],
+  "bioSnippets": [
+    "✈️ Exploring {topic} & beyond | Budget to luxury\n🗺️ 45+ countries documented\n👇 Grab our free travel itineraries below",
+    "🌍 Chasing sunsets & discovering {topic}\n🎒 Full-time nomad & visual creator\n📩 Collaborations & city guides 👇",
+    "🧭 Inspiring your next adventure in {topic}\n📸 Cinematic vlogs & travel hacks"
+  ]
+}

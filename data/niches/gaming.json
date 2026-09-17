@@ -1,0 +1,36 @@
+{
+  "niche": "gaming",
+  "keywords": ["gaming", "gamer", "gameplay", "streamer", "twitch", "esports", "minecraft", "gta", "fortnite", "valorant", "cod", "playstation", "xbox", "pc gaming", "walkthrough", "clutch"],
+  "highCompetition": [
+    "#gaming", "#gamer", "#videogames", "#playstation", "#xbox", "#pcgaming", "#gameplay", "#streamer", "#twitch", "#games"
+  ],
+  "mediumCompetition": [
+    "#gamingcommunity", "#gamersofinstagram", "#esports", "#gamingclips", "#twitchstreamer", "#pcsetup", "#gaminglife", "#gameclips", "#videogameaddict", "#proplay"
+  ],
+  "lowCompetition": [
+    "#insanegamingmoments", "#clutchplaysonly", "#solorankedclimb", "#pcbuildguide2026", "#gaminghighlightstoday", "#indiegamerecommendations", "#secretglitchesexplained"
+  ],
+  "youtubeTags": [
+    "gameplay walkthrough", "best moments and highlights", "how to rank up fast",
+    "secret easter eggs", "funny gaming moments", "unbeatable strategy guide",
+    "pc gaming performance benchmark", "clutch 1v5 highlights", "full playthrough part 1"
+  ],
+  "tiktokTags": [
+    "#GamingTok", "#GamerClips", "#GamerCheck", "#ClutchMoments", "#GamingSetup", "#StreamerTok", "#TwitchClips", "#GamingMemes"
+  ],
+  "facebookTags": [
+    "#GamersUnite", "#VideoGameLovers", "#GamingHighlights", "#LevelUp", "#GamingCommunity"
+  ],
+  "titleTemplates": [
+    "I Broke the World Record in {topic} (Nobody Expected This)",
+    "The Most Insane {topic} Strategy Nobody Uses",
+    "From Bronze to Radiant: The Ultimate {topic} Guide",
+    "10 Things Beginners Never Know About {topic}",
+    "We Tried the Hardest {topic} Challenge (Impossible Mode)"
+  ],
+  "bioSnippets": [
+    "🎮 Daily {topic} clutches & hilarious gameplay moments\n🔴 Live on Twitch Tue/Thu/Sat\n👇 Join our Discord community & gear list",
+    "⚡ High-FPS {topic} plays & pro tips\n🏆 Competitive esports grind\n👇 Check my full PC specs & presets",
+    "👾 Exploring every secret in {topic}\n🕹️ Reviews, hidden lore & cinematic playthroughs"
+  ]
+}

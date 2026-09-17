@@ -1,0 +1,36 @@
+{
+  "niche": "crypto",
+  "keywords": ["crypto", "cryptocurrency", "bitcoin", "btc", "ethereum", "eth", "solana", "trading", "blockchain", "defi", "web3", "altcoin", "nft", "market"],
+  "highCompetition": [
+    "#crypto", "#bitcoin", "#cryptocurrency", "#blockchain", "#btc", "#ethereum", "#trading", "#forex", "#money", "#investment"
+  ],
+  "mediumCompetition": [
+    "#cryptonews", "#cryptotrading", "#altcoins", "#web3community", "#cryptomarket", "#solana", "#defi", "#hodl", "#financialfreedom", "#cryptoinvestor"
+  ],
+  "lowCompetition": [
+    "#cryptomarketupdate2026", "#altcoinseasonprep", "#cryptotradingstrategy", "#defiyieldfarmingtips", "#onchainanalysisguide", "#solanaecosystemgems", "#technicalanalysisforbeginners"
+  ],
+  "youtubeTags": [
+    "crypto news today", "bitcoin price prediction 2026", "best altcoins to buy now",
+    "crypto trading strategy for beginners", "technical analysis tutorial",
+    "defi staking guide", "how to read crypto charts", "crypto market breakdown"
+  ],
+  "tiktokTags": [
+    "#CryptoTok", "#BitcoinTok", "#CryptoTrading", "#CryptoNews", "#Web3", "#CryptoGems", "#LearnCrypto", "#AltcoinDaily"
+  ],
+  "facebookTags": [
+    "#CryptoCommunity", "#BlockchainFuture", "#CryptoInvestors", "#DigitalAssets", "#CryptoUpdates"
+  ],
+  "titleTemplates": [
+    "EMERGENCY {topic} UPDATE: What You Need to Know RIGHT NOW",
+    "The 2026 {topic} Strategy That Could 10x Your Portfolio",
+    "Is {topic} Ready for a Massive Breakout? (Full Analysis)",
+    "3 Giant Mistakes Everyone Makes with {topic}",
+    "Why Smart Money is Moving Into {topic} in 2026"
+  ],
+  "bioSnippets": [
+    "📊 Daily {topic} charts, on-chain metrics & market signals\n⚡ 8+ years navigating crypto cycles\n👇 Free Telegram channel & market reports below",
+    "💎 Uncovering the biggest opportunities in {topic}\n🚀 Deep dives, tokenomics & risk management\n👇 Join our research discord below",
+    "🌐 Demystifying {topic} & Web3 without the hype\n💡 Educational breakdowns & beginner tutorials"
+  ]
+}
