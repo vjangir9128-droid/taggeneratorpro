@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/"],
     },
-    sitemap: "https://taggeneratorpro.online/sitemap.xml",
+    sitemap: ["https://taggeneratorpro.online/sitemap.xml", "https://www.taggeneratorpro.online/sitemap.xml",]
   };
 }
