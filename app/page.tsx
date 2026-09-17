@@ -1,33 +1,24 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import PlatformSelector from "@/components/PlatformSelector";
 import ContentTypeTabs from "@/components/ContentTypeTabs";
 import GeneratorForm from "@/components/GeneratorForm";
 import OutputCards from "@/components/OutputCards";
-import TrialTracker from "@/components/TrialTracker";
 import AdBanner from "@/components/AdBanner";
-import AuthModal from "@/components/AuthModal";
 import Footer from "@/components/Footer";
 import { Platform, GeneratedTagsResult } from "@/lib/hashtag-engine";
 import { ContentType, GenerationOptions } from "@/lib/llm-provider";
 import { GenerateResponseData } from "@/app/api/generate/route";
-import { ChevronDown, AlertCircle, Mail, Sparkles } from "lucide-react";
+import { ChevronDown, AlertCircle, Sparkles, CheckCircle2 } from "lucide-react";
 
 export default function HomePage() {
   const [platform, setPlatform] = useState<Platform>("youtube");
   const [contentType, setContentType] = useState<ContentType>("all");
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-
-  // 7-Day Trial State
-  const [trialEmail, setTrialEmail] = useState<string>("");
-  const [isTrialVerified, setIsTrialVerified] = useState(false);
-  const [trialDaysLeft, setTrialDaysLeft] = useState(7);
-  const [trialHoursLeft, setTrialHoursLeft] = useState(168);
-  const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
 
   // Output State
   const [lastGeneratedTopic, setLastGeneratedTopic] = useState("");
@@ -39,77 +30,27 @@ export default function HomePage() {
   // FAQ open state
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
-  // Check trial status from local storage and backend API
-  const refreshTrialStatus = async (storedEmail?: string) => {
-    try {
-      const email = storedEmail || localStorage.getItem("tagpro_trial_email") || "";
-      if (!email) {
-        setIsTrialVerified(false);
-        setTrialEmail("");
-        return;
-      }
-
-      setTrialEmail(email);
-
-      const res = await fetch(`/api/auth/status?email=${encodeURIComponent(email)}`);
-      const data = await res.json();
-
-      if (res.ok && data.success && data.trialStatus) {
-        setIsTrialVerified(data.trialStatus.isActive);
-        setTrialDaysLeft(data.trialStatus.daysLeft || 0);
-        setTrialHoursLeft(data.trialStatus.hoursLeft || 0);
-      }
-    } catch (e) {
-      console.warn("Trial status check failed:", e);
-    }
-  };
-
-  useEffect(() => {
-    refreshTrialStatus();
-  }, []);
-
-  const handleLogout = () => {
-    try {
-      localStorage.removeItem("tagpro_trial_email");
-      localStorage.removeItem("tagpro_trial_verified");
-    } catch (e) {
-      console.warn(e);
-    }
-    setTrialEmail("");
-    setIsTrialVerified(false);
-    setTrialDaysLeft(7);
-  };
-
   const handleGenerate = async (topic: string, options: GenerationOptions) => {
     setError(null);
     setIsLoading(true);
 
     try {
-      const headers: Record<string, string> = {
-        "Content-Type": "application/json",
-      };
-      if (trialEmail) {
-        headers["x-trial-email"] = trialEmail;
-      }
-
       const res = await fetch("/api/generate", {
         method: "POST",
-        headers,
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify({
           platform,
           contentType,
           topic,
           options,
-          email: trialEmail,
         }),
       });
 
       const data: GenerateResponseData = await res.json();
 
       if (!res.ok || !data.success) {
-        if (data.requiresVerification) {
-          setIsAuthModalOpen(true);
-        }
         throw new Error(data.error || "Generation failed. Please try again.");
       }
 
@@ -119,13 +60,6 @@ export default function HomePage() {
       setTitle(data.title);
       setDescription(data.description);
       setBio(data.bio);
-
-      // Sync trial state
-      if (data.trial) {
-        setIsTrialVerified(data.trial.isActive);
-        setTrialDaysLeft(data.trial.daysLeft);
-        setTrialHoursLeft(data.trial.hoursLeft);
-      }
     } catch (err: unknown) {
       console.error(err);
       const msg = err instanceof Error ? err.message : "An unexpected error occurred.";
@@ -137,8 +71,8 @@ export default function HomePage() {
 
   const faqs = [
     {
-      q: "How does the 7-day free trial work?",
-      a: "TagGeneratorPro is 100% free for everyone. When you enter your email, we send a secure verification link to your inbox. Once clicked, you get 7 days of unlimited daily generations across YouTube, TikTok, Instagram, and Facebook with zero charges and no credit card required.",
+      q: "Is TagGeneratorPro completely free to use?",
+      a: "Yes! TagGeneratorPro is 100% free for everyone. There are no paid plans, no subscriptions, no credit cards required, and no account registration needed. You have unlimited access to generate tags, titles, captions, and bios across all platforms.",
     },
     {
       q: "How does the YouTube Tag Generator ensure 500-character compliance?",
@@ -150,7 +84,7 @@ export default function HomePage() {
     },
     {
       q: "Can I export my generated tags to CSV or JSON?",
-      a: "Yes! All verified trial users can export tags and captions to CSV or JSON in 1 click, or copy formatted outputs directly to their clipboard for YouTube Creator Studio and TikTok captions.",
+      a: "Yes! You can export all generated assets (tags, titles, descriptions, bios) to CSV or JSON in 1 click, or copy formatted outputs directly to your clipboard for YouTube Creator Studio and TikTok captions.",
     },
     {
       q: "How do I optimize TikTok FYP reach with this tool?",
@@ -161,12 +95,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-[#090d16] text-slate-900 dark:text-slate-100 transition-colors">
       {/* Navigation Header */}
-      <Navbar
-        isVerified={isTrialVerified}
-        daysLeft={trialDaysLeft}
-        email={trialEmail}
-        onOpenAuth={() => setIsAuthModalOpen(true)}
-      />
+      <Navbar />
 
       <main className="flex-1 max-w-5xl mx-auto px-4 sm:px-6 py-6 w-full space-y-8">
         {/* Top Sponsor Banner */}
@@ -220,34 +149,25 @@ export default function HomePage() {
             />
           </div>
 
-          {/* Verification / Error notification */}
+          {/* Error notification */}
           {error && (
-            <div className="p-3.5 rounded-xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-900/60 text-xs font-medium text-amber-800 dark:text-amber-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-              <div className="flex items-center gap-2">
-                <AlertCircle className="w-4 h-4 shrink-0 text-amber-500" />
-                <span>{error}</span>
-              </div>
-              {!isTrialVerified && (
-                <button
-                  onClick={() => setIsAuthModalOpen(true)}
-                  className="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-bold transition-colors shrink-0 flex items-center gap-1.5"
-                >
-                  <Mail className="w-3.5 h-3.5" />
-                  <span>Verify Email (Free 7 Days)</span>
-                </button>
-              )}
+            <div className="p-3.5 rounded-xl bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-900/60 text-xs font-medium text-rose-700 dark:text-rose-300 flex items-center gap-2">
+              <AlertCircle className="w-4 h-4 shrink-0 text-rose-500" />
+              <span>{error}</span>
             </div>
           )}
 
-          {/* 7-Day Free Trial Tracker */}
-          <TrialTracker
-            isVerified={isTrialVerified}
-            daysLeft={trialDaysLeft}
-            hoursLeft={trialHoursLeft}
-            email={trialEmail}
-            onOpenAuth={() => setIsAuthModalOpen(true)}
-            onLogout={handleLogout}
-          />
+          {/* Free feature bar */}
+          <div className="flex flex-wrap items-center justify-between gap-3 p-3.5 rounded-2xl bg-emerald-50/50 dark:bg-emerald-950/30 border border-emerald-200/60 dark:border-emerald-800/40 text-xs text-emerald-800 dark:text-emerald-300 font-medium">
+            <div className="flex items-center gap-2">
+              <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
+              <span>Free & Unlimited: 500-char YouTube tags, IG tri-tier hashtags, TikTok hooks, and 1-click CSV export.</span>
+            </div>
+            <div className="flex items-center gap-1.5 text-emerald-700 dark:text-emerald-400 font-semibold">
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>Instant Generation</span>
+            </div>
+          </div>
         </div>
 
         {/* Inline Showcase Unit */}
@@ -350,15 +270,6 @@ export default function HomePage() {
         {/* Footer Sponsor Unit */}
         <AdBanner slot="footer" />
       </main>
-
-      {/* Email Verification / Auth Modal */}
-      <AuthModal
-        isOpen={isAuthModalOpen}
-        onClose={() => {
-          setIsAuthModalOpen(false);
-          refreshTrialStatus();
-        }}
-      />
 
       {/* Global Footer */}
       <Footer />

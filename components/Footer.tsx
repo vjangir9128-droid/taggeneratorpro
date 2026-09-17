@@ -94,13 +94,19 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-xs text-slate-600 dark:text-slate-400">
               <li>
-                <span className="cursor-default">Privacy Policy</span>
+                <Link href="/privacy-policy" className="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                  Privacy Policy
+                </Link>
               </li>
               <li>
-                <span className="cursor-default">Terms of Service</span>
+                <Link href="/terms-of-service" className="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                  Terms of Service
+                </Link>
               </li>
               <li>
-                <span className="cursor-default">Contact & Support</span>
+                <Link href="/contact" className="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                  Contact & Support
+                </Link>
               </li>
               <li>
                 <span className="cursor-default text-slate-400 dark:text-slate-500">

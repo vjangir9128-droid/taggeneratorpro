@@ -11,7 +11,7 @@ export default function Hero() {
       {/* Pill Badge */}
       <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200/60 dark:border-emerald-800/60 mb-4 shadow-xs">
         <Sparkles className="w-3.5 h-3.5 text-emerald-500 animate-pulse" />
-        <span>100% Free For Everyone • 7-Day Unlimited Trial</span>
+        <span>100% Free For Everyone • No Login Required</span>
       </div>
 
       {/* Main Headline */}
@@ -24,14 +24,14 @@ export default function Hero() {
 
       {/* Subtitle */}
       <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed mb-6">
-        Generate 500-character YouTube SEO tags, tri-tier Instagram hashtags, TikTok FYP hooks, descriptions, and bios in seconds. Free for all creators.
+        Generate 500-character YouTube SEO tags, tri-tier Instagram hashtags, TikTok FYP hooks, descriptions, and bios in seconds. Free, unlimited, and instant for all creators.
       </p>
 
       {/* Feature Highlights micro-bar */}
       <div className="flex flex-wrap items-center justify-center gap-4 text-xs font-medium text-slate-500 dark:text-slate-400">
         <div className="flex items-center gap-1.5">
           <Zap className="w-3.5 h-3.5 text-amber-500" />
-          <span>7-Day Free Unlimited Trial</span>
+          <span>Instant Tag Generation</span>
         </div>
         <div className="flex items-center gap-1.5">
           <TrendingUp className="w-3.5 h-3.5 text-emerald-500" />
@@ -39,7 +39,7 @@ export default function Hero() {
         </div>
         <div className="flex items-center gap-1.5">
           <ShieldCheck className="w-3.5 h-3.5 text-indigo-500" />
-          <span>No Credit Card Required</span>
+          <span>No Sign-up or Credit Card Required</span>
         </div>
       </div>
     </div>

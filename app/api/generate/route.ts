@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { generateTags, Platform, GeneratedTagsResult } from "@/lib/hashtag-engine";
 import { generateWithAI, ContentType, GenerationOptions } from "@/lib/llm-provider";
-import { getTrialStatus } from "@/lib/trial-auth";
 
 export interface GenerateResponseData {
   success: boolean;
@@ -12,19 +11,8 @@ export interface GenerateResponseData {
   title?: string;
   description?: string;
   bio?: string;
-  trial: {
-    isVerified: boolean;
-    isActive: boolean;
-    daysLeft: number;
-    hoursLeft: number;
-    email?: string;
-  };
-  requiresVerification?: boolean;
   error?: string;
 }
-
-// In-memory counter for unverified guest previews before requiring email verification
-const guestUsageMap = new Map<string, number>();
 
 export async function POST(req: NextRequest) {
   try {
@@ -64,40 +52,6 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Determine trial authentication
-    const headerEmail = req.headers.get("x-trial-email");
-    const cookieEmail = req.cookies.get("tagpro_trial_email")?.value;
-    const email = headerEmail || cookieEmail || body.email;
-
-    const trialStatus = email ? getTrialStatus(email) : null;
-    const isTrialActive = trialStatus?.isActive ?? false;
-
-    // If trial is NOT active / unverified, check guest limit
-    const forwarded = req.headers.get("x-forwarded-for");
-    const ip = forwarded ? forwarded.split(",")[0].trim() : "127.0.0.1";
-
-    if (!isTrialActive) {
-      const guestCount = guestUsageMap.get(ip) || 0;
-      // Allow 2 quick trial previews before requiring email verification
-      if (guestCount >= 2) {
-        return NextResponse.json(
-          {
-            success: false,
-            requiresVerification: true,
-            error: "Please verify your email to activate your 7-Day Free Unlimited Trial! TagGeneratorPro is 100% free with no credit card required.",
-            trial: {
-              isVerified: false,
-              isActive: false,
-              daysLeft: 0,
-              hoursLeft: 0,
-            },
-          },
-          { status: 403 }
-        );
-      }
-      guestUsageMap.set(ip, guestCount + 1);
-    }
-
     const cleanTopic = topic.trim().slice(0, 200);
 
     let tagsResult: GeneratedTagsResult | undefined;
@@ -125,13 +79,6 @@ export async function POST(req: NextRequest) {
       title,
       description,
       bio,
-      trial: {
-        isVerified: trialStatus?.isVerified || false,
-        isActive: isTrialActive,
-        daysLeft: trialStatus?.daysLeft || 0,
-        hoursLeft: trialStatus?.hoursLeft || 0,
-        email: trialStatus?.email || "",
-      },
     };
 
     return NextResponse.json(responsePayload);
