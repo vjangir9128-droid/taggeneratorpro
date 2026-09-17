@@ -176,9 +176,9 @@ export default function GeneratorForm({
                 value={audience}
                 onChange={(e) => setAudience(e.target.value)}
                 placeholder="e.g. Gen Z, beginners, entrepreneurs, busy parents"
-                className="w-full px-3 py-2 text-xs rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-indigo-500"
+                className="w-full px-3 py-2 text-sm rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-indigo-500"
               />
-              <p className="text-[10px] text-slate-500 dark:text-slate-400 mt-1">
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
                 Refines copy and tag suggestions to address specific audience preferences.
               </p>
             </div>

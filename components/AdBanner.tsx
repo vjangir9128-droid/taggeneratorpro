@@ -61,7 +61,7 @@ export default function AdBanner({ slot, className = "" }: AdBannerProps) {
       ) : (
         <div className="flex flex-col sm:flex-row items-center justify-between w-full px-4 gap-2">
           <div className="flex items-center gap-2 text-slate-400 dark:text-slate-500">
-            <span className="text-[10px] uppercase tracking-wider font-semibold px-2 py-0.5 rounded-md bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400">
+            <span className="text-xs uppercase tracking-wider font-semibold px-2 py-0.5 rounded-md bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400">
               100% Free
             </span>
             <span className="text-xs font-medium text-slate-500 dark:text-slate-400">
@@ -69,9 +69,9 @@ export default function AdBanner({ slot, className = "" }: AdBannerProps) {
             </span>
           </div>
 
-          <div className="text-[11px] font-medium text-emerald-600 dark:text-emerald-400 flex items-center gap-1">
-            <Sparkles className="w-3 h-3" />
-            <span>Free 7-Day Unlimited Access</span>
+          <div className="text-xs font-medium text-emerald-600 dark:text-emerald-400 flex items-center gap-1">
+            <Sparkles className="w-3.5 h-3.5" />
+            <span>100% Free For All Creators</span>
           </div>
         </div>
       )}

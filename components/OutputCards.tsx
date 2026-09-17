@@ -155,10 +155,10 @@ export default function OutputCards({
                   <Hash className="w-4 h-4" />
                 </div>
                 <div>
-                  <h3 className="text-sm font-bold text-slate-900 dark:text-white">
+                  <h3 className="text-base font-bold text-slate-900 dark:text-white">
                     {platform === "youtube" ? "YouTube SEO Tags (Comma-Separated)" : "Hashtags Pack"}
                   </h3>
-                  <p className="text-[11px] text-slate-500 dark:text-slate-400">
+                  <p className="text-xs text-slate-500 dark:text-slate-400">
                     {tagsResult.targetCountText}
                   </p>
                 </div>

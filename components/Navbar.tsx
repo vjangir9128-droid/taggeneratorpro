@@ -20,7 +20,7 @@ export default function Navbar() {
             <span className="text-base sm:text-lg font-extrabold tracking-tight text-slate-900 dark:text-white leading-none">
               TagGenerator<span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-indigo-500">Pro</span>
             </span>
-            <span className="text-[10px] font-medium text-slate-400 dark:text-slate-500 leading-tight">
+            <span className="text-xs font-medium text-slate-400 dark:text-slate-500 leading-tight">
               100% Free Social Media SEO Suite
             </span>
           </div>

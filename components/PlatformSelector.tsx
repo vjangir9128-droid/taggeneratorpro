@@ -90,7 +90,7 @@ export default function PlatformSelector({ selected, onChange }: PlatformSelecto
                 <span className="text-sm font-semibold block truncate">
                   {p.label}
                 </span>
-                <span className="text-[11px] text-slate-500 dark:text-slate-400 block truncate">
+                <span className="text-xs text-slate-500 dark:text-slate-400 block truncate">
                   {p.badge}
                 </span>
               </div>

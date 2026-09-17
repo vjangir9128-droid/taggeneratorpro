@@ -25,22 +25,22 @@
   --border-color: #1e293b;
 }
 
-/* Global Root Typography Scale - Increased for maximum readability across all devices */
+/* Global Root Typography Scale - Increased by 20% across all devices */
 html {
-  font-size: 18px;
+  font-size: 19.5px; /* Standard 16px + ~22% for optimal mobile readability */
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
 }
 
 @media (min-width: 640px) {
   html {
-    font-size: 18.5px;
+    font-size: 20px;
   }
 }
 
 @media (min-width: 1024px) {
   html {
-    font-size: 19px;
+    font-size: 21px;
   }
 }
 
@@ -56,13 +56,13 @@ body {
 
 /* Enhanced font sizing for smaller text classes */
 .text-xs {
-  font-size: 0.8125rem;
-  line-height: 1.35;
+  font-size: 0.85rem;
+  line-height: 1.4;
 }
 
 .text-sm {
-  font-size: 0.9375rem;
-  line-height: 1.45;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 /* Glassmorphism helpers */

@@ -19,7 +19,7 @@ export default function Footer() {
             <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
               The free multi-platform social media asset generator. Optimize your reach across YouTube, Instagram, TikTok, and Facebook with algorithmic tags and AI copy.
             </p>
-            <p className="text-[11px] text-slate-400">
+            <p className="text-xs text-slate-400">
               Deployed at <span className="font-semibold text-slate-700 dark:text-slate-300">taggeneratorpro.online</span>
             </p>
           </div>
