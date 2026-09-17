@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { BLOG_POSTS } from "@/data/blog-posts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://taggeneratorpro.online";
+  const baseUrl = "https://www.taggeneratorpro.online";
 
   const staticRoutes: MetadataRoute.Sitemap = [
     {

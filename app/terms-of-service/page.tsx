@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Terms of Service | TagGeneratorPro",
   description:
     "Review the Terms of Service for using TagGeneratorPro (taggeneratorpro.online). Free terms, acceptable use, and content disclaimers for social media creators.",
+  alternates: {
+    canonical: "https://www.taggeneratorpro.online/terms-of-service",
+  },
 };
 
 export default function TermsOfServicePage() {

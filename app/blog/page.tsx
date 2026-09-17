@@ -10,11 +10,14 @@ export const metadata: Metadata = {
   title: "Social Media Growth & SEO Guides (2026) | TagGeneratorPro",
   description:
     "Expert guides on YouTube SEO tags, Instagram hashtag tri-tier algorithms, TikTok viral growth, and social media copywriting.",
+  alternates: {
+    canonical: "https://www.taggeneratorpro.online/blog",
+  },
   openGraph: {
     title: "Social Media Growth & SEO Guides (2026) | TagGeneratorPro",
     description:
       "Expert guides on YouTube SEO tags, Instagram hashtag tri-tier algorithms, TikTok viral growth, and social media copywriting.",
-    url: "https://taggeneratorpro.online/blog",
+    url: "https://www.taggeneratorpro.online/blog",
   },
 };
 

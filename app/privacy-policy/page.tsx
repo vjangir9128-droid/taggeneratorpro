@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Privacy Policy | TagGeneratorPro",
   description:
     "Read the Privacy Policy for TagGeneratorPro (taggeneratorpro.online). Learn how we handle information, cookies, and protect your privacy while using our free social media tag generator.",
+  alternates: {
+    canonical: "https://www.taggeneratorpro.online/privacy-policy",
+  },
 };
 
 export default function PrivacyPolicyPage() {

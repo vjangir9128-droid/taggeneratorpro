@@ -8,7 +8,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://taggeneratorpro.online"),
+  metadataBase: new URL("https://www.taggeneratorpro.online"),
+  alternates: {
+    canonical: "https://www.taggeneratorpro.online",
+  },
   title: "TagGeneratorPro | Free Social Media Tag, Hashtag & Bio Generator",
   description:
     "Free social media tag, hashtag, keyword, title, description, and bio generator for YouTube, Instagram, TikTok, and Facebook. Maximize your SEO reach and engagement.",
@@ -33,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://taggeneratorpro.online",
+    url: "https://www.taggeneratorpro.online",
     title: "TagGeneratorPro | Free Tag, Hashtag & Caption Generator for Creators",
     description:
       "Generate platform-compliant tags for YouTube (500 chars), Instagram (tri-tier 30 hashtags), TikTok (FYP hooks), and Facebook.",
@@ -60,7 +63,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "WebApplication",
     name: "TagGeneratorPro",
-    url: "https://taggeneratorpro.online",
+    url: "https://www.taggeneratorpro.online",
     description:
       "A free social media tag, hashtag, keyword, title, description, and bio generator for YouTube, Instagram, Facebook, and TikTok.",
     applicationCategory: "MultimediaApplication",

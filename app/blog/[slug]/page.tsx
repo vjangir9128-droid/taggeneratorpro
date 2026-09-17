@@ -24,12 +24,15 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   return {
     title: `${post.title} | TagGeneratorPro`,
     description: post.description,
+    alternates: {
+      canonical: `https://www.taggeneratorpro.online/blog/${post.slug}`,
+    },
     openGraph: {
       title: post.title,
       description: post.description,
       type: "article",
       publishedTime: "2026-03-15T00:00:00.000Z",
-      url: `https://taggeneratorpro.online/blog/${post.slug}`,
+      url: `https://www.taggeneratorpro.online/blog/${post.slug}`,
     },
   };
 }
