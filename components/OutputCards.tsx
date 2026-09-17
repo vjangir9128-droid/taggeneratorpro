@@ -202,7 +202,7 @@ export default function OutputCards({
             </div>
 
             {/* Individual Chips view with competition pills */}
-            <div className="flex flex-wrap gap-1.5 mb-3.5">
+            <div className="flex flex-wrap gap-2 mb-4">
               {tagsResult.items.map((item, idx) => {
                 const tierColor =
                   item.tier === "high"
@@ -215,11 +215,11 @@ export default function OutputCards({
                   <button
                     key={idx}
                     onClick={() => copyToClipboard(item.tag, `chip-${idx}`)}
-                    className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium border transition-transform active:scale-95 ${tierColor}`}
+                    className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-sm font-medium border transition-transform active:scale-95 ${tierColor}`}
                     title={`Click to copy: ${item.tag} (${item.estimatedPosts || item.tier})`}
                   >
                     <span>{item.tag}</span>
-                    {copiedKey === `chip-${idx}` && <Check className="w-3 h-3 text-emerald-600" />}
+                    {copiedKey === `chip-${idx}` && <Check className="w-3.5 h-3.5 text-emerald-600" />}
                   </button>
                 );
               })}
@@ -227,7 +227,7 @@ export default function OutputCards({
 
             {/* Raw String View in Code Block */}
             <div className="relative group">
-              <pre className="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs font-mono text-slate-800 dark:text-slate-200 whitespace-pre-wrap break-words">
+              <pre className="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-sm font-mono text-slate-800 dark:text-slate-200 whitespace-pre-wrap break-words leading-relaxed">
                 {tagsResult.raw}
               </pre>
             </div>
@@ -243,10 +243,10 @@ export default function OutputCards({
                   <Type className="w-4 h-4" />
                 </div>
                 <div>
-                  <h3 className="text-sm font-bold text-slate-900 dark:text-white">
+                  <h3 className="text-base font-bold text-slate-900 dark:text-white">
                     {platform === "instagram" || platform === "tiktok" ? "Hook / Caption Opener" : "Video / Post Title"}
                   </h3>
-                  <p className="text-[11px] text-slate-500 dark:text-slate-400">
+                  <p className="text-xs text-slate-500 dark:text-slate-400">
                     High CTR front-loaded keywords
                   </p>
                 </div>
@@ -254,7 +254,7 @@ export default function OutputCards({
 
               <div className="flex items-center gap-3">
                 <span className="text-xs font-semibold text-slate-600 dark:text-slate-400">
-                  <span className={titleCharCount > titleLimit ? "text-rose-500" : "text-slate-900 dark:text-white"}>
+                  <span className={titleCharCount > titleLimit ? "text-rose-500 font-bold" : "text-slate-900 dark:text-white font-bold"}>
                     {titleCharCount}
                   </span>
                   /{titleLimit} chars
@@ -274,7 +274,7 @@ export default function OutputCards({
               </div>
             </div>
 
-            <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-sm font-medium text-slate-900 dark:text-white">
+            <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-base font-semibold text-slate-900 dark:text-white leading-relaxed">
               {title}
             </div>
           </div>
@@ -289,10 +289,10 @@ export default function OutputCards({
                   <FileText className="w-4 h-4" />
                 </div>
                 <div>
-                  <h3 className="text-sm font-bold text-slate-900 dark:text-white">
+                  <h3 className="text-base font-bold text-slate-900 dark:text-white">
                     {platform === "youtube" ? "Optimized YouTube Description" : "Post Description & Body"}
                   </h3>
-                  <p className="text-[11px] text-slate-500 dark:text-slate-400">
+                  <p className="text-xs text-slate-500 dark:text-slate-400">
                     Includes keyword placement, timestamps & CTA
                   </p>
                 </div>
@@ -317,7 +317,7 @@ export default function OutputCards({
               </div>
             </div>
 
-            <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm text-slate-800 dark:text-slate-200 whitespace-pre-wrap leading-relaxed">
+            <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-sm sm:text-base text-slate-800 dark:text-slate-200 whitespace-pre-wrap leading-relaxed">
               {description}
             </div>
           </div>
@@ -332,10 +332,10 @@ export default function OutputCards({
                   <UserCheck className="w-4 h-4" />
                 </div>
                 <div>
-                  <h3 className="text-sm font-bold text-slate-900 dark:text-white">
+                  <h3 className="text-base font-bold text-slate-900 dark:text-white">
                     {platform === "facebook" ? "Page About / Bio" : "Profile Bio"}
                   </h3>
-                  <p className="text-[11px] text-slate-500 dark:text-slate-400">
+                  <p className="text-xs text-slate-500 dark:text-slate-400">
                     Character limit: Max {bioLimit} characters
                   </p>
                 </div>
@@ -363,7 +363,7 @@ export default function OutputCards({
               </div>
             </div>
 
-            <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs sm:text-sm text-slate-800 dark:text-slate-200 whitespace-pre-wrap leading-relaxed">
+            <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-sm sm:text-base text-slate-800 dark:text-slate-200 whitespace-pre-wrap leading-relaxed">
               {bio}
             </div>
           </div>

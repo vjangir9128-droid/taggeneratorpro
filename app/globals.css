@@ -25,12 +25,44 @@
   --border-color: #1e293b;
 }
 
+/* Global Root Typography Scale - Increased for maximum readability across all devices */
+html {
+  font-size: 18px;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+@media (min-width: 640px) {
+  html {
+    font-size: 18.5px;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 19px;
+  }
+}
+
 body {
   background-color: var(--bg-main);
   color: var(--text-primary);
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   min-height: 100vh;
+  font-size: 1rem;
+  line-height: 1.6;
   transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Enhanced font sizing for smaller text classes */
+.text-xs {
+  font-size: 0.8125rem;
+  line-height: 1.35;
+}
+
+.text-sm {
+  font-size: 0.9375rem;
+  line-height: 1.45;
 }
 
 /* Glassmorphism helpers */
@@ -60,21 +92,24 @@ body {
 }
 
 .bg-facebook-gradient {
-  background: linear-gradient(135deg, #1877f2 0%, #0d5bbd 100%);
+  background: linear-gradient(135deg, #1877f2 0%, #0052cc 100%);
 }
 
-/* Custom Scrollbar */
+/* Custom Scrollbar for Tags list */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
+
 ::-webkit-scrollbar-track {
   background: transparent;
 }
+
 ::-webkit-scrollbar-thumb {
-  background: #94a3b8;
+  background: rgba(148, 163, 184, 0.35);
   border-radius: 9999px;
 }
-.dark ::-webkit-scrollbar-thumb {
-  background: #334155;
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.6);
 }
