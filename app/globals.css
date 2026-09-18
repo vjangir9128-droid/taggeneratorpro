@@ -27,20 +27,20 @@
 
 /* Global Root Typography Scale - Increased by 20% across all devices */
 html {
-  font-size: 18.5px; /* Standard 16px + ~22% for optimal mobile readability */
+  font-size: 16.5px; /* Standard 16px + ~22% for optimal mobile readability */
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
 }
 
 @media (min-width: 640px) {
   html {
-    font-size: 19px;
+    font-size: 17px;
   }
 }
 
 @media (min-width: 1024px) {
   html {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
